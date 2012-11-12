@@ -5,7 +5,7 @@ module Doorkeeper
     before_filter :authenticate_admin!
 
     def index
-      @applications = Application.all
+      @applications = Doorkeeper::Application.all
     end
 
     def new
